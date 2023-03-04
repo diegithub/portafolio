@@ -1,0 +1,79 @@
+#portafolio div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#portafolio h3{
+ color: var(--verdoso)
+}
+
+#portafolio button {
+    display: block;
+    position: relative;
+    margin: 1rem;
+    max-width: 400px;
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--gris-oscuro);
+    padding: 0;
+    border: none;
+    cursor: zoom-in;
+}
+#portafolio img {
+    display: block;
+    max-height: 300px;
+    transition: transform ease .3s;
+}
+#portafolio button:hover img {
+    transform: scale(1.25);
+}
+#portafolio button::before {
+    content: " ";
+    background-color: var(--verdoso);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: opacity ease .3s;
+    opacity: 0;
+}
+#portafolio button:hover::before {
+    opacity: 0.75;
+}
+#portafolio h4 {
+    display: block;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    opacity: 0;
+    transition: bottom ease .3s, opacity ease .3s;
+}
+#portafolio button:hover h4 {
+    bottom: 30%;
+    opacity: 1;
+}
+#portafolio button:after {
+    content: url("/images/zoom.svg");
+    width: 50%;
+    position: absolute;
+    z-index: 2;
+    left: 30%;
+    top: 0%;
+    transform: traslate(-40%, -50%);
+    opacity: 0;
+    transition: top ease .3s, opacity ease .3s;
+}
+#portafolio button:hover:after{
+    top: 25%;
+    opacity: .75;
+}
+    
+
+

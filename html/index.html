@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:ital@1&family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+<link rel="stylesheet" type="text/css" href="/css/fonts.css">
+<link rel="stylesheet" type="text/css" href="/css/utils.css">
+<link rel="stylesheet" type="text/css" href="/css/sections.css">
+<link rel="stylesheet" type="text/css" href="/css/header.css">
+<link rel="stylesheet" type="text/css" href="/css/nav.css">
+<link rel="stylesheet" type="text/css" href="/css/portafolio.css">
+<link rel="stylesheet" type="text/css" href="/css/skillset.css">
+<link rel="stylesheet" type="text/css" href="/css/experience.css">
+<link rel="stylesheet" type="text/css" href="/css/contact.css">
+<script src="/js/main.js" defer></script>
+<script src="/js/fixed.js" defer></script>
+</head>
+<body>
+        <header>
+            <img class="circle" src="/images/max4.png" alt="logo large"/>
+            <h1>Diego Fernando Velasco</h1>
+            <hr>
+            <h2>Desarrollador Web</h2>
+            <video autoplay loop muted>
+                <source src="/videos/negocio.mp4"/> 
+            </video>
+         <p>¡Hola! Soy Diego Fernando Velasco, me considero un desarrollador web en constante aprendizaje. Actualmente estoy trabajando en adquirir experiencia y habilidades para poder crear soluciones efectivas y creativas para las necesidades de los clientes. Mi objetivo es mejorar mi trabajo cada día y estar al tanto de las últimas tendencias y tecnologías en el campo del desarrollo web.</p>
+      <p>Me siento muy cómodo trabajando con HTML, CSS y JavaScript, también tengo experiencia en el uso de frameworks como React y Vue. Me encanta trabajar en equipo y estoy siempre dispuesto a aprender de mis compañeros y mentores, ya que creo que esto me ayuda a crecer y mejorar mis habilidades. </p>
+        </header>  
+    
+    <hr>
+    <nav id="navbar"><!--navbar-fixed-->
+        <div>
+            <a href="/">
+                <img class="circle" src="/images/max4-16px.png" alt="small logo">
+                <span>Diego Fernando Velasco <small>Desarrollador web</small></span>
+            </a>
+            <button id="hamburguer">☰</button>
+        </div>
+        <ul>
+            <li ><a href="#portafolio">Portafolio</a></li>
+            <li ><a href="#skillset">Habilidades</a></li>
+            <li ><a href="#experience">Experiencia</a></li>
+            <li ><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="portafolio">
+            <h3>Portafolio</h3>
+            <hr>
+            <div>
+                <button>
+                    <img src="/images/arquitectura.jpg"/>
+                    <h4>Proyecto arquitectura</h4>
+                </button>
+                <button>
+                    <img src="/images/montaña.jpg"/>
+                    <h4>Viaje al lago calima</h4>
+                </button>
+                <button>
+                    <img src="/images/moto.jpg"/>
+                    <h4>Mi motocicleta</h4>
+                </button>
+            </div>
+        </section>
+        <section id="skillset" class="even">
+            <h3>Habilidades</h3>
+            <hr>
+            <div>
+                <div>
+                    <img src="/images/html5.png" alt="html"/>
+                    <span class="tooltip">HTML</span>
+                </div>
+                <div>
+                    <img src="/images/css3.png" alt="ccs"/>
+                    <span class="tooltip">CSS</span>
+                </div>
+                <div>
+                    <img src="/images/javascript.png" alt="js"/>
+                    <span class="tooltip">Javascript</span>
+                </div>
+                <div>
+                    <img src="/images/angular.png" alt="angular"/>
+                    <span class="tooltip">Angular</span>
+                </div>
+                <div>
+                    <img src="/images/react.png" alt="react"/> 
+                    <span class="tooltip">React</span>
+                </div>
+                <div>
+                    <img src="/images/nodejs.png" alt="nodes"/>
+                    <span class="tooltip">Nodejs</span>
+                </div>
+                <div>
+                    <img src="/images/mysql.png" alt="Mysql"/>
+                    <span class="tooltip">Mysql</span>
+                </div>
+                <div>
+                    <img src="/images/java.png" alt="Java"/>
+                    <span class="tooltip">Java</span>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="experience">
+            <h3>Experiencia</h3>
+            <hr>
+            <div class="imagen-contenedor">
+                <a>
+                    <img src="/images/cafeteros.jpg"/>
+                    <h4>Federacion nacional de cafeteros</h4>
+                </a>
+                <a>
+                    <img src="/images/ferreteria.jpg"/>
+                    <h4>Comercializadora granitos perlita S.A.S</h4>
+                </a>
+                <a>
+                    <img src="/images/forex.jpg"/>
+                    <h4>Forex</h4>
+                </a>
+            </div>
+        </section>
+        <section id="contact" class="even">
+            <h3>Contacto</h3>
+            <hr>
+            <form action="https://formspree.io/f/mbjqgnvj" method="post">
+                <label >
+                    Your Email
+                    <input type="email" name="_replyto">
+                </label>
+                <label>
+                    Your Message
+                    <textarea name="message"></textarea>
+                </label>
+                <button type="submit">Send</button>
+              </form>
+        </section>  
+        
+        <section id="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100014114627037">
+            <img id="github" src="/images/github.png" width="64px" height="64px"/>
+            </a>
+            <a href="https://www.youtube.com/watch?v=WHejvUhX6rk">
+                <img id="linkedin" src="/images/linkedin.png"width="64px" height="64px"/>
+            </a>
+            <a href="https://www.youtube.com/watch?v=WHejvUhX6rk">
+                <img id="facebook" src="/images/facebook.png"width="64px" height="64px"/>
+            </a>
+        </section>  
+    </main>
+    <footer > 
+        <small>Developed and designed by Diego Fernando Velasco. © 2023</small>
+    </footer>
+</body>
+</html>

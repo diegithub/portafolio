@@ -1,0 +1,29 @@
+html{
+    background: linear-gradient(var(--verde-oscuro), var(--verde-principal), var(--verde-palido), var(--verde-encendido));
+}
+section{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+#navbar, section.even{
+    background: var(--verde-oscuro); /*linear-gradient(var(--verde-oscuro), var(--verde-palido));*/
+}
+#navbar li {
+    background: var(--verde-oscuro); 
+}
+footer{
+    background: var(--verde-oscuro);/*linear-gradient(var(--verde-encendido),var(--verde-principal));*/
+    padding: 2rem 0;
+}
+hr{
+    height: 0.1rem;
+    max-width: 100%;
+    border: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0), var(--verdoso),rgba(0,0,0,0) );
+}
+section.even hr{
+    background-image: linear-gradient(to right, rgba(0,0,0,0), var(--white),rgba(0,0,0,0));
+}
+section hr{
+    margin-bottom: 5rem;
+}
