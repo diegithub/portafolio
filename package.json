@@ -1,0 +1,23 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "mi portafolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegithub/portafolio.git"
+  },
+  "author": "diego",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegithub/portafolio/issues"
+  },
+  "homepage": "https://github.com/diegithub/portafolio#readme",
+  "dependencies": {
+    "eins-modal": "^2.2.2",
+    "normalize.css": "^8.0.1"
+  }
+}

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/node_modules/normalize.css/normalize.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portafolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:ital@1&family=Playfair+Display&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&family=Playfair+Display&display=swap" rel="stylesheet">
@@ -114,15 +115,15 @@
             <h3>Experiencia</h3>
             <hr>
             <div class="imagen-contenedor">
-                <a>
+                <a data-modal-id="myModal">
                     <img src="/images/cafeteros.jpg"/>
                     <h4>Federacion nacional de cafeteros</h4>
                 </a>
-                <a>
+                <a data-modal-id="myModal">
                     <img src="/images/ferreteria.jpg"/>
                     <h4>Comercializadora granitos perlita S.A.S</h4>
                 </a>
-                <a>
+                <a data-modal-id="myModal">
                     <img src="/images/forex.jpg"/>
                     <h4>Forex</h4>
                 </a>
@@ -159,5 +160,15 @@
     <footer > 
         <small>Developed and designed by Diego Fernando Velasco. © 2023</small>
     </footer>
+    <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
+    <div id="myModal" class="eins-modal">
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+      
+          Mi primer trabajo
+          
+          <button class="eins-modal-close-button">OK</button>
+        </div>
+      </div>
 </body>
 </html>
